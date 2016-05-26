@@ -1,0 +1,10 @@
+framework module UTCommonCryto {
+  umbrella header "UTCommonCryto.h"
+
+  export *
+  module * { export * }
+}
+
+module UTCommonCryto.Swift {
+    header "UTCommonCryto-Swift.h"
+}
