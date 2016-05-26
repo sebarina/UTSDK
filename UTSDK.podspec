@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   #s.public_header_files = "Tencent/*.h", "Wechat/*.h", "WeiboSDK/*.h", "UTSDK/*h"
 
-  s.resource = "WeiboSDK/WeiboSDK.bundle"
+  s.resources = "WeiboSDK/WeiboSDK.bundle", "Tencent/TencentOpenApi_IOS_Bundle.bundle"
 
   s.frameworks = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
   s.vendored_frameworks = "UTCommonCryto.framework", "TencentOpenAPI.framework"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "libWeChatSDK.a", "libWeiboSDK.a"
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "OTHER_LDFLAGS" => "-fobjc-arc" }
   s.dependency 'UTNetwork', '~> 1.0.0'
   s.dependency 'UTKeychainSecurity', '~> 1.1.0'
 
