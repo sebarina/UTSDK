@@ -7,11 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WXApi.h"
-#import "TencentOAuth.h"
-#import "QQApiInterface.h"
-#import "WeiboSDK.h"
-#import "WeiboUser.h"
 //! Project version number for UTSDK.
 FOUNDATION_EXPORT double UTSDKVersionNumber;
 
